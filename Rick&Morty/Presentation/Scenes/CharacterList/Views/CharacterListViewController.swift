@@ -9,54 +9,54 @@ import Foundation
 import UIKit
 
 class CharacterListViewController: UIViewController {
+    
+    // MARK: - IBOutlets
+    private var tableView: UITableView?
+    
     // MARK: - Private properties
-    private var characterRepository: CharacterRepository!
     private var viewModel: CharactersListViewModelProtocol!
     private var dataSource: CharactersDataSource!
-    private var tableView: UITableView!
+    private var characterRepository: CharacterRepository!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableViewSetUp()
+        configureViewModel()
+        fetchTeData()
+    }
+    
+    private func tableViewSetUp(){
         // Initialize the UITableView instance
-        tableView = UITableView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height), style: .plain)
+        let tableView = UITableView(frame: CGRect.zero, style: .plain)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        // Register cell classes if needed
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "characterCell")
         
         view.addSubview(tableView)
-        setUpConstraits()
-        configureViwModel()
         
-        fetchTeData() 
-    }
-    private func configureViwModel(){
-        characterRepository = CharacterRepository()
-        viewModel = CharacterListViewModel(with: characterRepository)
-        dataSource = CharactersDataSource(tableView: tableView, datasource: viewModel)
-       
-    }
-    
-    
-    private func setUpConstraits(){
-        tableView.translatesAutoresizingMaskIntoConstraints = false
+        // Set constraints
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+        
+        self.tableView = tableView
     }
     
-    func fetchTeData(){
-        self.viewModel.getCharacterList { characters in
-            if !characters.isEmpty {
-                       // Data fetched successfully
-                       print("Data received from service:", characters)
-                   } else {
-                       // No data received or error occurred
-                       print("No data received from service or error occurred")
-                   }
-            
+    private func configureViewModel(){
+        characterRepository = CharacterRepository()
+        viewModel = CharacterListViewModel(with: characterRepository)
+        if let tableView = tableView {
+            dataSource = CharactersDataSource(tableView: tableView, viewModel: viewModel)
+        } else {
+            fatalError("tableView is nil after setup")
         }
     }
     
+    func fetchTeData(){
+        dataSource?.refresh()
+    }
 }

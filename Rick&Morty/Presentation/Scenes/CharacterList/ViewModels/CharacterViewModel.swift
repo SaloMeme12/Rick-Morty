@@ -14,13 +14,13 @@ struct CharacterViewModel {
     init(character: CharacterResult){
         self.character = character
     }
-//    var name: String{
-//        character.name ?? " "
-//    }
-//    var spesies: String {
-//        character.species ?? ""
-//    }
-//    var gender: String {
-//        character.gender ?? " "
-//    }
+    var name: String{
+        character.name ?? " "
+    }
+    var spesies: String {
+        character.species ?? ""
+    }
+    var gender: String {
+        character.gender ?? " "
+    }
 }

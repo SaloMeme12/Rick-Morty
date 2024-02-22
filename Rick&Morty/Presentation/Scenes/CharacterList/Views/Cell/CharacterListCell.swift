@@ -13,8 +13,9 @@ class CharacterTableViewCell: UITableViewCell {
     // MARK: - Properties
     
     private let characterImageView: UIImageView = {
-        let imageView = UIImageView()
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 2, height: 20))
         imageView.contentMode = .scaleAspectFit
+        imageView.backgroundColor = .yellow
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -81,18 +82,18 @@ class CharacterTableViewCell: UITableViewCell {
     
     // MARK: - Configure
     
-    func configure(with character: CharacterResult) {
+    func configure(with character: CharacterViewModel) {
         nameLabel.text = character.name
-        speciesLabel.text = "Species: \(character.species ?? "Unknown")"
+        speciesLabel.text = "Species: \(character.spesies ?? "Unknown")"
         genderLabel.text = "Gender: \(character.gender ?? "Unknown")"
         
-        // Set character image (assuming it's stored as a URL)
-        if let imageUrlString = character.image,
-           let imageUrl = URL(string: imageUrlString) {
-            // You can use a library like SDWebImage to handle image loading asynchronously
-            // For simplicity, let's assume you have an image stored locally
-            characterImageView.image = UIImage(named: "placeholder_image")
-        }
+//        // Set character image (assuming it's stored as a URL)
+//        if let imageUrlString = character.image,
+//           let imageUrl = URL(string: imageUrlString) {
+//            // You can use a library like SDWebImage to handle image loading asynchronously
+//            // For simplicity, let's assume you have an image stored locally
+//            characterImageView.image = UIImage(named: "placeholder_image")
+//        }
     }
 }
 
