@@ -11,6 +11,12 @@
 		FE5A5DA42B712EF100E7820B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A5DA32B712EF100E7820B /* SceneDelegate.swift */; };
 		FE5A5DAB2B712EF200E7820B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5A5DAA2B712EF200E7820B /* Assets.xcassets */; };
 		FE5A5DAE2B712EF200E7820B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5A5DAC2B712EF200E7820B /* LaunchScreen.storyboard */; };
+		FE740A842B8654AE00903F25 /* RickMortyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE740A832B8654AE00903F25 /* RickMortyAPI.swift */; };
+		FEC5ED702B874B1B007770FE /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC5ED6B2B874B1B007770FE /* Info.swift */; };
+		FEC5ED712B874B1B007770FE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC5ED6C2B874B1B007770FE /* Location.swift */; };
+		FEC5ED722B874B1B007770FE /* Origin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC5ED6D2B874B1B007770FE /* Origin.swift */; };
+		FEC5ED732B874B1B007770FE /* RootCharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC5ED6E2B874B1B007770FE /* RootCharacterData.swift */; };
+		FEC5ED742B874B1B007770FE /* CharacterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC5ED6F2B874B1B007770FE /* CharacterResult.swift */; };
 		FED932DB2B7B79500073FD9A /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED932DA2B7B79500073FD9A /* CharacterListViewController.swift */; };
 		FED932DD2B7B795F0073FD9A /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED932DC2B7B795F0073FD9A /* CharacterListViewModel.swift */; };
 		FED932DF2B7B799B0073FD9A /* CharacterListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED932DE2B7B799B0073FD9A /* CharacterListCell.swift */; };
@@ -18,9 +24,6 @@
 		FED932F42B7BABEF0073FD9A /* EpisodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED932F32B7BABEF0073FD9A /* EpisodeData.swift */; };
 		FED932F62B7BADCB0073FD9A /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED932F52B7BADCB0073FD9A /* LocationData.swift */; };
 		FED932FA2B7BB16B0073FD9A /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED932F92B7BB16B0073FD9A /* CharacterViewModel.swift */; };
-		FED932FE2B7BB46C0073FD9A /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED932FB2B7BB46C0073FD9A /* CharacterData.swift */; };
-		FED932FF2B7BB46C0073FD9A /* Origin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED932FC2B7BB46C0073FD9A /* Origin.swift */; };
-		FED933002B7BB46C0073FD9A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED932FD2B7BB46C0073FD9A /* Location.swift */; };
 		FEF060F52B7798FE00AD2A32 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF060F42B7798FE00AD2A32 /* CharacterRepository.swift */; };
 		FEF060F72B77994B00AD2A32 /* EpisodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF060F62B77994B00AD2A32 /* EpisodeRepository.swift */; };
 		FEF060FA2B77997800AD2A32 /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF060F92B77997800AD2A32 /* LocationRepository.swift */; };
@@ -34,6 +37,12 @@
 		FE5A5DAA2B712EF200E7820B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE5A5DAD2B712EF200E7820B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE5A5DAF2B712EF200E7820B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE740A832B8654AE00903F25 /* RickMortyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyAPI.swift; sourceTree = "<group>"; };
+		FEC5ED6B2B874B1B007770FE /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		FEC5ED6C2B874B1B007770FE /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = "../../../../../json2kt_Swift_04-26-40am_79694 2/Location.swift"; sourceTree = "<group>"; };
+		FEC5ED6D2B874B1B007770FE /* Origin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Origin.swift; path = "../../../../../json2kt_Swift_04-26-40am_79694 2/Origin.swift"; sourceTree = "<group>"; };
+		FEC5ED6E2B874B1B007770FE /* RootCharacterData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCharacterData.swift; sourceTree = "<group>"; };
+		FEC5ED6F2B874B1B007770FE /* CharacterResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterResult.swift; sourceTree = "<group>"; };
 		FED932DA2B7B79500073FD9A /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
 		FED932DC2B7B795F0073FD9A /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 		FED932DE2B7B799B0073FD9A /* CharacterListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListCell.swift; sourceTree = "<group>"; };
@@ -41,9 +50,6 @@
 		FED932F32B7BABEF0073FD9A /* EpisodeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeData.swift; sourceTree = "<group>"; };
 		FED932F52B7BADCB0073FD9A /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 		FED932F92B7BB16B0073FD9A /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
-		FED932FB2B7BB46C0073FD9A /* CharacterData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterData.swift; path = "../../../../../json2kt_Swift_09-29-09am_391067/CharacterData.swift"; sourceTree = "<group>"; };
-		FED932FC2B7BB46C0073FD9A /* Origin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Origin.swift; path = "../../../../../json2kt_Swift_09-29-09am_391067/Origin.swift"; sourceTree = "<group>"; };
-		FED932FD2B7BB46C0073FD9A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = "../../../../../json2kt_Swift_09-29-09am_391067/Location.swift"; sourceTree = "<group>"; };
 		FEF060F42B7798FE00AD2A32 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
 		FEF060F62B77994B00AD2A32 /* EpisodeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRepository.swift; sourceTree = "<group>"; };
 		FEF060F92B77997800AD2A32 /* LocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
@@ -138,11 +144,19 @@
 		FEADF12E2B74FAB9001D0191 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FED932EA2B7B8F090073FD9A /* Characters */,
+				FED932EA2B7B8F090073FD9A /* Entities */,
 				FED932ED2B7B910A0073FD9A /* Locations */,
 				FED932EE2B7B91120073FD9A /* Episodes */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FECD2AFA2B826BF500B5BCD2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FED932DE2B7B799B0073FD9A /* CharacterListCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		FED932D82B7B78EE0073FD9A /* LocationList */ = {
@@ -162,8 +176,8 @@
 		FED932E02B7B7A820073FD9A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FECD2AFA2B826BF500B5BCD2 /* Cell */,
 				FED932DA2B7B79500073FD9A /* CharacterListViewController.swift */,
-				FED932DE2B7B799B0073FD9A /* CharacterListCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,14 +192,16 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		FED932EA2B7B8F090073FD9A /* Characters */ = {
+		FED932EA2B7B8F090073FD9A /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				FED932FB2B7BB46C0073FD9A /* CharacterData.swift */,
-				FED932FD2B7BB46C0073FD9A /* Location.swift */,
-				FED932FC2B7BB46C0073FD9A /* Origin.swift */,
+				FEC5ED6E2B874B1B007770FE /* RootCharacterData.swift */,
+				FEC5ED6B2B874B1B007770FE /* Info.swift */,
+				FEC5ED6C2B874B1B007770FE /* Location.swift */,
+				FEC5ED6D2B874B1B007770FE /* Origin.swift */,
+				FEC5ED6F2B874B1B007770FE /* CharacterResult.swift */,
 			);
-			path = Characters;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		FED932ED2B7B910A0073FD9A /* Locations */ = {
@@ -208,7 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				FEF060F22B7798B900AD2A32 /* Repositories */,
-				FEF060F32B7798BD00AD2A32 /* Services */,
+				FEF060F32B7798BD00AD2A32 /* Network */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -223,12 +239,13 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
-		FEF060F32B7798BD00AD2A32 /* Services */ = {
+		FEF060F32B7798BD00AD2A32 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FE740A832B8654AE00903F25 /* RickMortyAPI.swift */,
 				FEF060FB2B779AA600AD2A32 /* NetworkManager.swift */,
 			);
-			path = Services;
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,20 +320,23 @@
 			files = (
 				FEF060F52B7798FE00AD2A32 /* CharacterRepository.swift in Sources */,
 				FED932FA2B7BB16B0073FD9A /* CharacterViewModel.swift in Sources */,
-				FED933002B7BB46C0073FD9A /* Location.swift in Sources */,
+				FEC5ED712B874B1B007770FE /* Location.swift in Sources */,
 				FED932F02B7B92280073FD9A /* CharactersDataSource.swift in Sources */,
+				FEC5ED702B874B1B007770FE /* Info.swift in Sources */,
 				FED932DB2B7B79500073FD9A /* CharacterListViewController.swift in Sources */,
+				FEC5ED742B874B1B007770FE /* CharacterResult.swift in Sources */,
 				FEF060F72B77994B00AD2A32 /* EpisodeRepository.swift in Sources */,
+				FE740A842B8654AE00903F25 /* RickMortyAPI.swift in Sources */,
 				FE5A5DA22B712EF100E7820B /* AppDelegate.swift in Sources */,
 				FED932DF2B7B799B0073FD9A /* CharacterListCell.swift in Sources */,
-				FED932FE2B7BB46C0073FD9A /* CharacterData.swift in Sources */,
 				FED932F42B7BABEF0073FD9A /* EpisodeData.swift in Sources */,
 				FEF060FC2B779AA600AD2A32 /* NetworkManager.swift in Sources */,
 				FED932F62B7BADCB0073FD9A /* LocationData.swift in Sources */,
 				FE5A5DA42B712EF100E7820B /* SceneDelegate.swift in Sources */,
 				FED932DD2B7B795F0073FD9A /* CharacterListViewModel.swift in Sources */,
 				FEF060FA2B77997800AD2A32 /* LocationRepository.swift in Sources */,
-				FED932FF2B7BB46C0073FD9A /* Origin.swift in Sources */,
+				FEC5ED722B874B1B007770FE /* Origin.swift in Sources */,
+				FEC5ED732B874B1B007770FE /* RootCharacterData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

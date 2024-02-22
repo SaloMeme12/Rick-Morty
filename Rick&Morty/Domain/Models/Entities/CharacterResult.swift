@@ -1,12 +1,7 @@
-//
-//  CharacterData.swift
-//  Rick&Morty
-//
-//  Created by Mcbook Pro on 13.02.24.
-//
 
 import Foundation
-struct CharacterData: Codable {
+
+struct CharacterResult: Codable {
 
   var id       : Int?      = nil
   var name     : String?   = nil
@@ -37,7 +32,7 @@ struct CharacterData: Codable {
     case created  = "created"
   
   }
-// deserialization
+
   init(from decoder: Decoder) throws {
     let values = try decoder.container(keyedBy: CodingKeys.self)
 

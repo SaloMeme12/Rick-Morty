@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  UIButton:0x7fdd12b0eed0'Button'.trailing\"> and <NSLayoutXAxisAnchor:0x600001222a00 \"UILayoutGuide:0x600003e37f00'UIViewSafeAreaLayoutGuide'.trailing\"> because they have no common ancestor.  Does the constraint or its anchors reference items in different view hierarchies?  That's illegal."AppDelegate.swift
 //  Rick&Morty
 //
 //  Created by Mcbook Pro on 05.02.24.
